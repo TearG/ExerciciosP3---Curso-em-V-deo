@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Modelo de Exercício</title>
+  <title>Verificador de Idade</title>
   <link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="carregar()">
+<body">
   <header>
-    <h1>Hora do Dia</h1>
+    <h1>Verificador de Idade</h1>
   </header>
   <section>
-      <div id="msg">
-        Aqui vai aparecer a mensagem...
+    <div>
+      <p>Ano de Nascimento:
+        <input type="number" name="txtano" id="txtano" min="0"></p>
+      <p>Sexo:
+        <input type="radio" name="radsex" id="mas">
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem" checked>
+        <label for="fem">Feminino</label>
+      </p>
+      <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+      </p>
       </div>
-    <div id="foto">
-      <img id="imagem" src="Manha2.png" alt="Foto do Dia">
-    </div>
+      <div id="res">
+        Preencha os dados acima para ver o resultado!
+      </div>
   </section>
   <footer>
     <p>&copy; CursoemVídeo</p>
@@ -29,6 +40,6 @@
   teal, blue, blurple, magenta, pink!
   -->
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
+  </body>
 
 </html>
